@@ -1,0 +1,69 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Sem-5.master" AutoEventWireup="false" CodeFile="contact us.master.vb" Inherits="contact_us" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style4 {
+            font-weight: normal;
+            }
+        </style>
+</head>
+<body>
+    
+    
+        <tr style="width:1300px;height:200px;">
+            <td colspan="3" style="text-align:center;">
+                &nbsp;<img src="images/ContactC.jpg" height="200px" width="600px" /><br />
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    <span style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: inherit; vertical-align: baseline;"><strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Contact Information:</strong></span></p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    &nbsp;</p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Gujarat Technological University</strong><br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Nr.Vishwakarma Government Engineering College</strong><br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Nr.Visat Three Roads, Visat - Gandhinagar Highway</strong><br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Chandkheda, Ahmedabad – 382424 - Gujarat&nbsp;</strong></p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    &nbsp;</p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Phone:&nbsp; 079-23267521/570&nbsp;</strong><br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Fax Hon’ble Vice Chancellor office : 079-23267564</strong><br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Fax Registrar Office : 079-23267580</strong><br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Fax Controller of Examination : 079-23267572</strong></p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    <br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"><a href="http://gtu.ac.in/mail/GTU_EDU_IN/GTU_Contacts_edu.pdf" style="color: rgb(0, 0, 128); margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; vertical-align: baseline; text-decoration: none; outline: 0px;">GTU Contacts for Various Activities</a></strong>&nbsp;<br />
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"><a href="http://gtu.ac.in/ImpCircular/GTU_Help_Line_Numbers.pdf" style="color: rgb(0, 0, 128); margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; vertical-align: baseline; text-decoration: none; outline: 0px;">GTU Help Line Numbers</a></strong>&nbsp;&nbsp;</p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    <strong style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;">Email :&nbsp;&nbsp;<a href="mailto:info@gtu.ac.in" style="color: rgb(0, 0, 128); margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; vertical-align: baseline; text-decoration: none; outline: 0px;">info@gtu.ac.in</a>,&nbsp;<a href="mailto:registrar@gtu.ac.in" style="color: rgb(0, 0, 128); margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; vertical-align: baseline; text-decoration: none; outline: 0px;">registrar@gtu.ac.in</a></strong></p>
+                <p style="margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11px; line-height: 18px; font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; vertical-align: baseline; color: rgb(66, 66, 66); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                    Web :&nbsp;&nbsp;&nbsp;<a href="http://www.gtu.ac.in/" style="color: rgb(0, 0, 128); margin: 0px; z-index: 0; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; vertical-align: baseline; text-decoration: none; outline: 0px;">http://www.gtu.ac.in</a>&nbsp;</p>
+                <br />
+            </td>
+        </tr>
+        <tr style="width:1300px;">
+     <td colspan="3">
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    
+     </td>
+
+        </tr>
+      
+ 
+</body>
+</html>
+
+</asp:Content>
+

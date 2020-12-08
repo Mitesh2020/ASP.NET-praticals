@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Sem-5.master" AutoEventWireup="true" CodeFile="studentzone.master.cs" Inherits="studentzone" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+    .auto-style5 {
+        width: 838px;
+        height: 187px;
+    }
+    .auto-style6 {
+            text-align: right;
+            width: 252px;
+        }
+        .auto-style9 {
+            text-align: center;
+            font-size: xx-large;
+            width: 400px;
+        }
+        .auto-style10 {
+            width: 252px;
+        }
+        .auto-style12 {
+            width: 825px;
+            height: 153px;
+        }
+        .auto-style13 {
+            height: 29px;
+            text-align: left;
+        }
+        .auto-style15 {
+            height: 29px;
+            width: 251px;
+            text-align: left;
+        }
+        .auto-style16 {
+            width: 251px;
+            text-align: left;
+        }
+        .auto-style17 {
+            text-align: left;
+        }
+        .auto-style18 {
+            text-align: left;
+            width: 252px;
+        }
+        .auto-style19 {
+            text-align: left;
+            width: 400px;
+        }
+        .auto-style20 {
+            width: 232px;
+            height: 152px;
+            position: absolute;
+            left: 421px;
+            top: 975px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table align="center" class="auto-style5">
+    <tr>
+        <td class="auto-style6">
+            &nbsp;</td>
+        <td class="auto-style9">
+            <strong>Student Grade History</strong></td>
+        <td>
+            &nbsp;</td>
+    </tr>
+    <tr>
+        <td class="auto-style18">
+            <asp:Label ID="Label1" runat="server" Text="Enrollment No. :"></asp:Label>
+        </td>
+        <td class="auto-style19">
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" Display="Dynamic" ErrorMessage="RequiredFieldValidator">Please enter enrollment no.</asp:RequiredFieldValidator>
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style18">
+            <asp:Label ID="Label2" runat="server" Text="Semester :"></asp:Label>
+        </td>
+        <td class="auto-style19">
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="RequiredFieldValidator">Please enter semester</asp:RequiredFieldValidator>
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style10">&nbsp;</td>
+        <td class="auto-style19">
+            <asp:Button ID="Button1" runat="server" Text="Search" OnClick="Button1_Click" />
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+    <br />
+    <br />
+    <table align="center" class="auto-style12">
+        <tr>
+            <td class="auto-style15">
+                <asp:Label ID="Label3" runat="server" Text="Name :"></asp:Label>
+            </td>
+            <td class="auto-style13">
+                <asp:Label ID="Label7" runat="server" Text="RATHOD MITESH GANESHBHAI"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style15">
+                <asp:Label ID="Label4" runat="server" Text="Enrollment No :"></asp:Label>
+            </td>
+            <td class="auto-style13">
+                <asp:Label ID="Label8" runat="server" Text="186120316052       "></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                <asp:Label ID="Label5" runat="server" Text="Institute :"></asp:Label>
+            </td>
+            <td class="auto-style17">
+                <asp:Label ID="Label9" runat="server" Text="612--DR. S. and S. S. GHANDHY COLLEGE OF ENGINEERING and TECHNOLOGY,SURAT"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                <asp:Label ID="Label6" runat="server" Text="Branch :"></asp:Label>
+            </td>
+            <td class="auto-style17">
+                <asp:Label ID="Label10" runat="server" Text="DI-16-INFORMATION TECHNOLOGY"></asp:Label>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="auto-style20" DataKeyNames="Sub_Code" DataSourceID="SqlDataSource1">
+        <Columns>
+            <asp:BoundField DataField="Sub_Code" HeaderText="Sub_Code" ReadOnly="True" SortExpression="Sub_Code" />
+            <asp:BoundField DataField="Sub_Name" HeaderText="Sub_Name" SortExpression="Sub_Name" />
+            <asp:BoundField DataField="TH_ESE" HeaderText="TH_ESE" SortExpression="TH_ESE" />
+            <asp:BoundField DataField="TH_PA" HeaderText="TH_PA" SortExpression="TH_PA" />
+            <asp:BoundField DataField="TH_Total" HeaderText="TH_Total" SortExpression="TH_Total" />
+            <asp:BoundField DataField="PR_ESE" HeaderText="PR_ESE" SortExpression="PR_ESE" />
+            <asp:BoundField DataField="PR_PA" HeaderText="PR_PA" SortExpression="PR_PA" />
+            <asp:BoundField DataField="PR_Total" HeaderText="PR_Total" SortExpression="PR_Total" />
+            <asp:BoundField DataField="Subject_Grade" HeaderText="Subject_Grade" SortExpression="Subject_Grade" />
+        </Columns>
+    </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:testConnectionString %>" SelectCommand="SELECT * FROM [project2]"></asp:SqlDataSource>
+<br />
+<div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+<br />
+<br />
+</asp:Content>
+

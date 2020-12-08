@@ -1,0 +1,77 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 98px;
+            height: 78px;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        .auto-style4 {
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width:1300px;margin:0 auto">
+        <tr style="width:1300px;height:20px;">
+            <td style="width:100px;">
+                <img src="images/m.jpg" class="auto-style1" />
+            </td>
+            <td style="width:200px;">
+               <h3 class="auto-style3" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> My blog </h3>
+            </td>
+            <td style="width:1000px;text-align:right;">
+                &nbsp&nbsp&nbsp&nbsp</td>
+        </tr>
+        <tr style="width:1300px;height:50px;background-color:cornflowerblue;">
+            <td colspan="3">
+                <asp:Menu ID="Menu1" runat="server" Font-Size="Large" ForeColor="White" Orientation="Horizontal">
+                    <DynamicHoverStyle Font-Size="Larger" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="Category" Value="Category"></asp:MenuItem>
+                        <asp:MenuItem Text="About us" Value="About us"></asp:MenuItem>
+                        <asp:MenuItem Text="Settings" Value="Settings"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact us" Value="Contact us"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="Black" ForeColor="White" />
+                    <StaticMenuItemStyle ForeColor="White" HorizontalPadding="50px" />
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr style="width:1300px;height:200px;">
+            <td colspan="3">
+                &nbsp;<img src="images/ban.jpg" height="250px" width="1300px" /></td>
+        </tr>
+        <tr style="width:1300px;">
+     <td colspan="3">
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+     </td>
+
+        </tr>
+        <tr style="width:1300px;height:30px;background-color:black;text-align:center;color:white;">
+            <td colspan="3">
+                <h4 class="auto-style4"><em>Mitesh Rathod</em></h4>
+            </td>
+        </tr>
+    </table>
+       
+    </form>
+</body>
+</html>
